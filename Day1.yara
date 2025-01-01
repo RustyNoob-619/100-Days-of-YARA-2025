@@ -9,7 +9,7 @@ rule JS_APT_Lazarus_Nukesped_strings
     filehash2 = "d62614d8c7f2eb68202d0d73a84e621008cfbe8d7e652952ad26206620aea76d"
     
   strings:
-    $port = "5346" fullword
+    $port = "'5346'" fullword
     $brwsr1 = "Googl" 
     $brwsr2 = "Brave" fullword
     $brwsr3 = "opera" fullword
