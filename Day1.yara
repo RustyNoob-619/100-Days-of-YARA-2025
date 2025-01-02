@@ -1,4 +1,4 @@
-rule JS_APT_Lazarus_Nukesped_strings
+rule JS_APT_DPRK_ContagiousInterview_strings
 {
   meta:
     author = "RustyNoob619"
