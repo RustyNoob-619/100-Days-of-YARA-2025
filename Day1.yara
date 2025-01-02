@@ -2,7 +2,7 @@ rule JS_APT_DPRK_ContagiousInterview_strings
 {
   meta:
     author = "RustyNoob619"
-    description = "Detects Nukesped JavaScript used of APT Lazarus based on visible human-readable strings"
+    description = "Detects DPRK cluster known as  Contagious Interview JavaScript samples based on visible human-readable strings"
     credit = "Dmitry Bestuzhev @dimitribest for sharing the malware samples and providing an overview of the malware capabilities"
     source = "https://x.com/dimitribest/status/1872743641166606737"
     filehash1 = "ab754242fe28fa282a9169e47c3e12752fa444c22945cd220c657bcab561b983"
