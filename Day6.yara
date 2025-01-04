@@ -1,5 +1,7 @@
 // The two below are extension of the usacase of the TTP_Memory_Permissions_Tampering
 
+// Added the below to Day3 ruelset to centralise TTPs in one place
+
 rule TTP_AMSI_DLL_Live_Patching
 {
   meta:
@@ -43,3 +45,5 @@ rule TTP_ETW_DLL_Live_Patching
     and $etwfunc
     and 2 of ($api*)
 }
+
+// Added the above to Day3 ruelset to centralise TTPs in one place
