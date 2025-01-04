@@ -1,3 +1,7 @@
+//===================================================TTPs YARA Ruleset================================================
+//NOTE: This ruleset will be updated with modifications to existing rules and addition of new rules as the 100 Days of YARA challenge progresses
+//IMPORTANT: Please copy paste the entire ruleset in order to use the rules from Day4 onwards...
+
 private rule TTP_PowerShell_execution
   {strings:
     $pwrshll = "powershell.exe" ascii wide 
