@@ -11,7 +11,7 @@ rule Script_Python_PE_Dropper
     File_Format_Script_Python
     and TTP_Embedded_PE_Base64
     //and TTP_AMSI_DLL_Live_Patching
-    //and TTP_TTP_ETW_DLL_Live_Patching
+    //and TTP_ETW_DLL_Live_Patching
     and filesize < 250KB
 
 }
