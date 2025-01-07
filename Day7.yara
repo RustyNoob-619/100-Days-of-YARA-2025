@@ -1,3 +1,5 @@
+// Please Reference the ruleset of Day3 :)
+
 rule Script_Python_PE_Dropper
 {
   meta:
