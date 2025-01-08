@@ -2,7 +2,7 @@ rule Script_Python_Exploit_CVE_2024_49113
 {
   meta:
     author = "RustyNoob619"
-    description = "Detects expolit for the CVE-2024-49113 also known as LDAPNightmare"
+    description = "Detects expolit script (relies on exploit_server py) for the CVE-2024-49113 also known as LDAPNightmare"
     filehash = "1b062243ad5c9398ef05a038c3a1d5a288010b517658d3690d8c20b57842e453" 
     reference = "https://www.safebreach.com/blog/ldapnightmare-safebreach-labs-publishes-first-proof-of-concept-exploit-for-cve-2024-49113/"
    
