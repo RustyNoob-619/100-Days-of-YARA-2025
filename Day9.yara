@@ -22,5 +22,5 @@ rule ELF_CN_APT41_Backdoor_KeyPlug
   
   condition:
     elf.telfhash() == "t156213580ed3e5b9616e15d78cc542be3819396baa121db14ff98ddc0886e10af360d2e" // Requires testing with YARA ELF module 
-    
+    and filesize < 5MB   
 }
