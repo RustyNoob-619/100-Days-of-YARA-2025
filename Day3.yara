@@ -137,6 +137,18 @@ private rule File_Format_Script_Python
     any of ($imprts*) and any of ($py*)
     
 }
+//import "elf"
+rule Packer_ELF_UPX
+{
+  meta:
+    author = "RustyNoob619"
+    description = "Detects ELF samples that are packed with the UPX packer based on the sections in the file"
+    filehash = "e5e475db5076e112f69b61ccb36aaedfbb7cac54a03a4a2b3c6a4a9317af2196"
+  
+  condition:
+    for any section in elf.sections:
+    (section.name startswith ".upx")
+}
 
 private rule Header_File_HTA
 {strings:
