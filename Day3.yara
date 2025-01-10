@@ -33,6 +33,15 @@ private rule TTP_Base64_encoding_usage
   condition:
     $base64}
 
+//import "time"
+private rule TTP_Tampered_Time_Stamp {
+    meta:
+        author = "RustyNoob619"
+        description = "Detects PE files that have time stamps from the future"
+    condition:
+        pe.timestamp > time.now()
+}
+
 private rule TTP_Embedded_PE_Base64
 {
   meta:
@@ -138,7 +147,7 @@ private rule File_Format_Script_Python
     
 }
 //import "elf"
-rule Packer_ELF_UPX
+private rule Packer_ELF_UPX
 {
   meta:
     author = "RustyNoob619"
