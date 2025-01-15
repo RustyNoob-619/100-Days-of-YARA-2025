@@ -1,4 +1,4 @@
-rule EXE_SYS_RootKit_QAssist
+rule EXE_Signed_RootKit_QAssist
 {
   meta:
     author = "Rustynoob619"
@@ -26,8 +26,11 @@ rule EXE_SYS_RootKit_QAssist
 
   condition:
     pe.number_of_signatures > 0
-    and pe.pdb_path endswith "QAssist.pdb"
-    and pe.pdb_path contains "hidden-master"
-    and all of them 
+    and ((pe.pdb_path endswith "QAssist.pdb"
+    and pe.pdb_path contains "hidden-master")
+    or 
+    (any of ($aassist*)
+    and 5 of ($hid*)
+    and any of ($rgstr*))) 
     and filesize < 500KB
 }
