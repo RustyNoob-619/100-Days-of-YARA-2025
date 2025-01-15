@@ -1,3 +1,4 @@
+import "pe"
 rule EXE_Signed_RootKit_QAssist
 {
   meta:
