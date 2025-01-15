@@ -30,7 +30,7 @@ rule EXE_Signed_RootKit_QAssist
     and ((pe.pdb_path endswith "QAssist.pdb"
     and pe.pdb_path contains "hidden-master")
     or 
-    (any of ($aassist*)
+    (any of ($qassist*)
     and 5 of ($hid*)
     and any of ($rgstr*))) 
     and filesize < 500KB
