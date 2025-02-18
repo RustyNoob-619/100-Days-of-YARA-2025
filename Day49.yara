@@ -1,4 +1,4 @@
-rule MAL_LNX_ELF_Backdoor_SPAWNSLOTH_FEB25
+rule MAL_LNX_ELF_LogTampering_SPAWNSLOTH_FEB25
 {
   meta:
     author = "RustyNoob619"
