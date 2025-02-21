@@ -1,7 +1,7 @@
 
 import "vt"
 
-rule url_template
+rule VT_HTML_URL_MAL_Stealer_Login_Panels_FEB25
 {
   meta:
     author = "RustyNoob619"
