@@ -6,6 +6,7 @@ rule VT_HTML_URL_MAL_Stealer_Medusa_Panel_FEB25
   meta:
     author = "RustyNoob619"
     description = "Detects Medusa Stealer C2 Panel based on the Favicon"
+    match = "http://79.137.203.233/"
     target_entity = "url"
 
   condition:
