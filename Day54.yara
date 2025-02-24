@@ -13,7 +13,9 @@ rule TTP_Defense_Evasion_Hosts_File_Manipulation_strings
   strings:
     $path = "C:/Windows/System32/drivers/etc/hosts" ascii wide fullword 
 
-    $hex = {31 32 37 2e 30 2e 30 2e 31 20 20 20 [10-30] 2e 63 6f 6d 0a} //127.0.0.1   domain_name
+    $hex1 = {31 32 37 2e 30 2e 30 2e 31 20 20 20 [10-30] 2e 63 6f 6d 0a} //127.0.0.1   custom_domain_name
+
+    $hex2 = {30 2e 30 2e 30 2e 30 20 [10-30] 2e 63 6f 6d 0a} //0.0.0.0   custom_domain_name
 
     $str1 = "127.0.0.1   www.malwarebytes.com" ascii wide fullword 
     $str2 = "127.0.0.1   www.emsisoft.com" ascii wide fullword 
@@ -34,6 +36,7 @@ rule TTP_Defense_Evasion_Hosts_File_Manipulation_strings
 
   condition:
     $path 
-    and ((any of ($str*)) or ($hex))
+    and ((any of ($str*)) or (any of ($hex*)))
     and filesize < 25MB
 }
+
