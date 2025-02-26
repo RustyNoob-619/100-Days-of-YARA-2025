@@ -11,12 +11,20 @@ rule Actor_APT_RU_UAC0212_MAL_WIN_PE_EMPIREPAST_FEB25
   
   strings:
     $domain = "protectconnections.com" ascii fullword
+    $cmd = "cmd.exe" ascii fullword
 
   condition:
-    (pe.imphash() == "39f2a397d177ea36c4f18a77ec235b92"
+    (pe.imphash() == "39f2a397d177ea36c4f18a77ec235b92" or pe.imphash() == "4ef6effa4a8b91ddb7f3658b682f2d73"
     or pe.exports("DoUpdateInstanceEx") or $domain)
+    and $cmd
+    and pe.number_of_signatures == 1
     and filesize < 500KB
 }
+
+
+
+
+
 
 
 
