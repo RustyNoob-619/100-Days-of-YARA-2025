@@ -31,7 +31,7 @@ rule MAL_WIN_EXE_Ransomware_Ymir_Strings_FEB25
   condition:
     uint16(0) == 0x5a4d
     and ($git or $pdf or $ext)
-    and all of ($pwrshell*)
+    and all of ($pwrshll*)
     and 3 of ($exclude*)
     and any of ($compile*)
     and filesize < 3MB
