@@ -23,14 +23,13 @@ rule MAL_WIN_EXE_Ransomware_Ymir_Strings_FEB25
 
     $pdf = "INCIDENT_REPORT.pdf" ascii fullword
 
-    $ext = "	6C5oy2dVr6" ascii fullword
+    $ext = "6C5oy2dVr6" ascii wide fullword
 
     $pwrshll1 = "powershell -w h -c Start-Sleep -Seconds 5" 
     $pwrshll2 = "Remove-Item -Force -Path"
     
   condition:
     uint16(0) == 0x5a4d
-    and all of them
     and ($git or $pdf or $ext)
     and all of ($pwrshell*)
     and 3 of ($exclude*)
