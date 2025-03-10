@@ -2,9 +2,8 @@
 rule TTP_PowerShell_Obfuscation_strings_MAR25
 {
   meta:
-    author = "Yashraj Solanki"
+    author = "RustyNoob619"
     description = "Detects a PowerShell Obfuscation technique used by threat cluster UAC-0184"
-    credit = "Joshua Penny for drafting the initial YARA"
     source1 = "https://www.linkedin.com/posts/idan-tarab-7a9057200_uac0184-cyberattack-threatresearch-ugcPost-7302710505834467329-E0gI/?utm_source=share&utm_medium=member_android&rcm=ACoAAAVx-dgBDxaF1I3qYrWwuOhh-o-hjwEOE04"
     source1 = "https://www.morphisec.com/blog/unveiling-uac-0184-the-remcos-rat-steganography-saga/"
     filehash1 = "9ed972e4bd181c65ca053dcf0220f4101a51387517b4c0c5f7ce6cf49895de27"
