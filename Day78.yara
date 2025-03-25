@@ -1,7 +1,7 @@
 
 import "lnk"
 
-rule Actor_Multiple_ActorName_SUS_WIN_LNK_Exploit_ZDI_CAN_25373_Mar25
+rule Actor_Multiple_SUS_WIN_LNK_Exploit_ZDI_CAN_25373_Mar25
 {
     meta:
         rule_id = "c3ae1ae2-608a-4d66-a2d1-45e3c8d9bc65"
