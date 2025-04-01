@@ -6,6 +6,7 @@ rule Actor_APT_RU_FIN7_MAL_WIN_Script_PY_Backdoor_Anubis_strings_Mar25
             date = "12-03-2025"
             author = "RustyNoob619"
             description = "Detects Anubis loader used by FIN7 group based on observed strings"
+            credit = "@MalGamy12 for sharing malware sample and analysis"
             source = "https://x.com/MalGamy12/status/1899907026978849182"
             filehash = "e5255d5f476784fcef97f9c41b12665004c1b961e35ad445ed41e0d6dbbc4f8e"
 
